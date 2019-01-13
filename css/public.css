@@ -113,6 +113,29 @@ h3.menu-item-title {
 }
 /* END SINGLE CATEGORY PAGE */
 
+/* SIGNUP PAGE */
+/* Title of Sign up page */
+div > h3 {
+  text-align: center;
+}
+/* The title of the text box */
+form > div > span:nth-child(1) {
+  text-align: right;
+  badding-right: 5px;
+}
+
+/* Text input box */
+form > div > span:nth-child(2) > input{
+  color: black;
+}
+
+/* submit button */
+#submit {
+  display: block;
+  margin: auto;
+  color: black;
+}
+/* END SIGNUP PAGE */
 
 /********** Large devices only **********/
 @media (min-width: 1200px) {
