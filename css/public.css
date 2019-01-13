@@ -143,6 +143,11 @@ form > div > span:nth-child(2) > input{
     background: url('../images/jumbotron_1200.jpg') no-repeat;
     height: 675px;
   }
+
+  #not-registered {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
 }
 
 /********** Medium devices only **********/
@@ -153,6 +158,11 @@ form > div > span:nth-child(2) > input{
     height: 558px;
   }
   /* End Home Page */
+
+  #not-registered {
+    margin-top: 150px;
+    margin-bottom: 150px;
+  }
 }
 
 /********** Small devices only **********/

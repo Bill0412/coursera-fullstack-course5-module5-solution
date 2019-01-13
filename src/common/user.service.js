@@ -10,7 +10,18 @@
 
     service.register = function (userInfo) {
       user = userInfo;
-      console.log(user);
+      // console.log(user);
+    }
+
+    service.getIsRegistered = function () {
+      if (user) {
+        return true;
+      }
+      return false;
+    }
+
+    service.getUserInfo = function () {
+      return user;
     }
   }
 }());
