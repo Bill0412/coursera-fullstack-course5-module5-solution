@@ -77,7 +77,7 @@
   <br>
 
   <div>
-    <span class="col-md-6 col-xs-12">Favorite Menu:  </span>
+    <span class="col-md-6 col-xs-12">Favorite Menu Item:  </span>
     <span class="col-md-6 col-xs-12">
       <input type="text" name="favoriteMenu" placeholder="Favorite Menu Number"
       ng-model="ctrl.favoriteMenu"
@@ -105,7 +105,11 @@
   </div>
 
   <div ng-if="ctrl.isRegistered">
-    You information has been saved
+    You information has been saved.
+  </div>
+
+  <div ng-if="ctrl.isMenuItemNotFound">
+    No such menu number exists.
   </div>
 
 

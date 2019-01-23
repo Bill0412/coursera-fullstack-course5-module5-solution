@@ -16,14 +16,24 @@ function MenuService($http, ApiPath) {
   };
 
 
-  service.getMenuItems = function (category) {
-    var config = {};
-    if (category) {
-      config.params = {'category': category};
-    }
+  service.getMenuItems = function (menu_item) {
+    // var config = {};
+    // if (category) {
+    //   config.params = {'category': category};
+    // }
 
-    return $http.get(ApiPath + '/menu_items.json', config).then(function (response) {
+    return $http.get(ApiPath + '/menu_items/'+ menu_item + '.json')
+    .then(function success (response) {
+      console.log('response.data: ', response.data);
+      console.log('response: ', response);
       return response.data;
+    },
+    function error(response) {
+      console.log('http error:', response);
+      if(response.data.status == 500) {
+        console.log("Internal Server Error");
+        return null;
+      }
     });
   };
 

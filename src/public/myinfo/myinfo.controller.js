@@ -17,7 +17,8 @@
       MenuService.getMenuItems(ctrl.user['favoriteMenu'])
       .then(function (response) {
         console.log('response: ',response)
-        ctrl.menuItems = response['menu_items'];
+        ctrl.menuItems = [];
+        ctrl.menuItems.push(response);
       })
     }
   }
