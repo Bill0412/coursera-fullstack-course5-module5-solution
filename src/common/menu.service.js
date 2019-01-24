@@ -24,14 +24,14 @@ function MenuService($http, ApiPath) {
 
     return $http.get(ApiPath + '/menu_items/'+ menu_item + '.json')
     .then(function success (response) {
-      console.log('response.data: ', response.data);
-      console.log('response: ', response);
+      //console.log('response.data: ', response.data);
+      //console.log('response: ', response);
       return response.data;
     },
     function error(response) {
       console.log('http error:', response);
       if(response.data.status == 500) {
-        console.log("Internal Server Error");
+        //console.log("Internal Server Error");
         return null;
       }
     });

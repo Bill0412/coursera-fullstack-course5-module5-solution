@@ -16,7 +16,7 @@
     if(ctrl.isRegistered) {
       MenuService.getMenuItems(ctrl.user['favoriteMenu'])
       .then(function (response) {
-        console.log('response: ',response)
+        //console.log('response: ',response)
         ctrl.menuItems = [];
         ctrl.menuItems.push(response);
       })
